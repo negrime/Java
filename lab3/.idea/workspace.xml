@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d436dbc-1760-40ae-8cbf-b971f4a9ea82" name="Default Changelist" comment="" />
+    <list default="true" id="4477fe6a-e0d3-4e87-a322-73175c7075a4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +11,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -19,13 +18,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Qf4VZ4MOlxcCqpZgo243vVvIDf" />
+  <component name="ProjectId" id="1QgpWrZS3mpn9OcR6GbrBEf2t5d" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -42,7 +40,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
-      <module name="!laba2" />
+      <module name="lab3" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -61,12 +59,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8d436dbc-1760-40ae-8cbf-b971f4a9ea82" name="Default Changelist" comment="" />
-      <created>1568148340830</created>
+      <changelist id="4477fe6a-e0d3-4e87-a322-73175c7075a4" name="Default Changelist" comment="" />
+      <created>1568202127489</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568148340830</updated>
-      <workItem from="1568148344793" duration="6051000" />
+      <updated>1568202127489</updated>
+      <workItem from="1568286968800" duration="2887000" />
     </task>
     <servers />
   </component>
@@ -90,16 +88,11 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/src/com/company/EchoCommand.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="item" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

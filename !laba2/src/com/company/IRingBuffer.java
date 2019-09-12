@@ -1,6 +1,6 @@
 package com.company;
 
-public interface IRingBuffer<E> {
+public interface IRingBuffer<E> extends Iterable<E> {
     /**
      * Возвращает и удаляет элемент из начала очереди.
      *
