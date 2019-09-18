@@ -180,10 +180,9 @@ public class Main {
                 result = a * b;
                 break;
             case '/':
-                if (a != 0)
-                    result = b / a;
-                else
+                if (a == 0)
                     throw new Exception("Деление на нуль");
+                result = b / a;
                 break;
             default:
                 result = 0;

@@ -4,18 +4,15 @@ import java.io.File;
 import java.io.IOException;
 
 public abstract class Command {
-    private String command = "";
     private String parameter = "";
-    private String key = "";
+    private boolean key = false;
 
 
-
-    public String getKey() {
+    public Boolean getKey() {
         return key;
     }
 
-
-    public void setKey(String key) {
+    public void setKey(Boolean key) {
         this.key = key;
     }
 
@@ -27,14 +24,6 @@ public abstract class Command {
         return parameter;
     }
 
-    public String getCommand() {
-        return command;
-    }
-
-    public void setCommand(String command) {
-        this.command = command;
-    }
-
-    public void doTask() throws IOException { System.out.println("Default");};
+    public abstract void doTask() throws IOException;
 
 }

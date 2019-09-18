@@ -3,8 +3,7 @@ package com.company;
 import java.io.File;
 
 public class MkdirCommand extends Command {
-    public MkdirCommand(String command, String param) {
-        setCommand(command);
+    public MkdirCommand(String param) {
         setParameter(param);
     }
 
@@ -12,9 +11,12 @@ public class MkdirCommand extends Command {
     public void doTask() {
         File f = new File(new File("").getAbsolutePath() + "\\" + getParameter());
 
-            if (!f.exists())
-                f.mkdir();
-            else
-                System.out.println("\ta Directory with the same name is exists!");
+        if (!f.exists()) {
+            f.mkdir();
+            System.out.println("\t\"" + getParameter() + "\" was created!");
+            System.out.println(f.getPath());
+        }
+        else
+            System.out.println("\ta Directory with the same name is exists!");
     }
 }
