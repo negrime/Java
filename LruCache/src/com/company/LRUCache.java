@@ -17,13 +17,15 @@ class Node<K, V> {
 
 
 public class LRUCache<K, V> implements ILRUCache {
-    int capacity;
-    HashMap<K, Node> map = new HashMap<K, Node>();
-    Node head = null;
-    Node end = null;
+    private int capacity;
+    private int size;
+    private HashMap<K, Node> map = new HashMap<K, Node>();
+    private Node head = null;
+    private Node end = null;
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
+        size = 0;
     }
 
     /*This method will delete node*/
@@ -58,13 +60,14 @@ public class LRUCache<K, V> implements ILRUCache {
 
     @Override
     public Object get(Object key) {
+        V result = null;
         if (map.containsKey(key)) {
             Node n = map.get(key);
             delete(n);
             setHead(n);
-            return (V) n.value;
+            result = (V) n.value;
         }
-        return null;
+        return result;
     }
 
     @Override
@@ -83,19 +86,23 @@ public class LRUCache<K, V> implements ILRUCache {
                 // remove last node
                 delete(end);
                 setHead(newNode);
-
+                size--;
             } else {
                 setHead(newNode);
             }
 
             map.put((K) key, newNode);
+            size++;
         }
     }
 
     @Override
     public int getSize() {
-        return 0;
+        return size;
     }
+
+    public int getCapacity() {return capacity;}
+
 
     @Override
     public int getLimit() {
