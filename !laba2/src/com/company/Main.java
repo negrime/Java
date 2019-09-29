@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         RingBuffer<Integer> r = null;
         try {
-             r = new RingBuffer(0);
+             r = new RingBuffer();
         }
         catch (Exception e) {
             System.out.println(e);
