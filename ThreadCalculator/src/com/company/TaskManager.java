@@ -10,19 +10,22 @@ public class TaskManager {
         final int DIVIDE = 10;
         float result = 0;
         int iterations = 0;
+        StringBuilder expression = new StringBuilder();
         Random random = new Random();
+        System.out.println("Start generate!");
         while (iterations < DIVIDE) {
-            StringBuilder expression = new StringBuilder();
             iterations++;
             if (isMulti) {
                 int expressionCount = (count / DIVIDE) / threadsCount;
                 GenerateThread[] generateThreads = new GenerateThread[threadsCount];
                 Thread[] threads = new Thread[threadsCount];
+
                 for (int i = 0; i < threadsCount; i++) {
                     generateThreads[i] = new GenerateThread(expressionCount, Integer.toString(i));
                     threads[i] = new Thread(generateThreads[i]);
                     threads[i].start();
                 }
+
                 for (int i = 0; i < threadsCount; i++) {
                     threads[i].join();
                 }
@@ -38,9 +41,9 @@ public class TaskManager {
             } else {
                 expression.append(ArithmeticExpressionGenerator.GenerateExpression(count, Thread.currentThread().getName()));
             }
-            System.out.println("Generated!");
-            result += Calculate.Task(expression.toString());
         }
+        System.out.println("Generated!");
+        result += Calculate.Task(expression.toString());
         return result;
     }
 }

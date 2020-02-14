@@ -15,6 +15,7 @@ public class ArithmeticExpressionGenerator {
             result.append(random.nextInt(101));
             result.append(random.nextInt(2) % 2 == 0 ? "+" : "-");
             result.append(random.nextInt(101));
+            //For debug
             // System.out.println("Generate " + (i) + " by " + name);
         }
         return result.toString();
