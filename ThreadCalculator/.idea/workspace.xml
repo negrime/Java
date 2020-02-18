@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5663607-6a75-437d-84b8-fe300608dd24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../!laba2/!laba2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../!laba2/!laba2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../!laba2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../!laba2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../!laba2/src/com/company/IRingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../!laba2/src/com/company/IRingBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../!laba2/src/com/company/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../!laba2/src/com/company/RingBuffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/ArithmeticExpressionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ArithmeticExpressionGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TaskManager.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,10 +85,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/TaskManager.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

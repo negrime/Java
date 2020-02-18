@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Iterator;
-
 public class RingBuffer<E> implements IRingBuffer<E> {
     private int size;
     private E[] array; // выполнится до конструктора? - Да
